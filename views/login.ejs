@@ -1,0 +1,42 @@
+
+<div class="container center" >
+
+<h1>Login</h1>
+
+<form  action="/login-verif" method="post">
+
+  
+    <label for="user"><b>Username</b></label>
+    <input type="text" placeholder="type username" name="user" required>
+    <br>
+    <br>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="type password" name="password" required>
+    <br>
+    <br>
+    <div id="btn-login">
+    <button class="btn" type="submit">Log In</button>
+	</div>
+   	<br> 
+   	<br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Save authentication data
+    </label>
+ 
+  		<br>
+     	<br>
+
+    
+    	<p > <a href="/lostPass">  Forgotten password?</a></p>
+
+</form>
+ </div>
+
+<% if  (typeof errorMsg != 'undefined')  { %>
+<p id="errorMsg"><%= errorMsg %> !</p>
+<% } %>  
+    
+<% if  (typeof lostpass != 'undefined')  { %>
+<p id="errorMsg"><%= lostpass %> !</p>
+<% } %>  
+    

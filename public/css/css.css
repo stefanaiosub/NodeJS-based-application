@@ -1,0 +1,212 @@
+html,body{
+  
+  margin:0;
+  height: 100%;
+  
+}
+
+
+
+.container{
+  /*width:100%;*/
+  margin:0;
+
+  /*height: 100%;*/
+  
+}
+
+#header{
+    position: absolute;
+    height: 50px;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
+}
+
+
+
+
+/* MENIU LATERAL */
+
+
+
+.sidenav {
+  height: 150%; 
+  width: 0px; 
+  position: absolute; 
+  z-index: 1; /* Stay on top */
+  top: 0; 
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu {
+
+  top:50px;
+  left:150px;
+  position: absolute;
+  margin-left:120px; /* Same as the width of the sidebar */
+  margin-left:50px;
+  padding: 0px 10px;
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* IMAGES*/
+
+
+
+
+.bg-image {
+  /* Full height */
+  height: 150%;
+
+  /* Center and scale the image nicely */
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("images/layout/img7.gif"); }
+
+
+
+
+/* DIVS */
+
+.center{
+  
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%);
+}
+
+
+
+
+
+
+/* OTHERS */
+
+
+#errorMsg{
+  color: #FF0000;
+}
+
+
+#logged{
+  top:0px;
+  position:fixed;
+  right:10px; 
+  color: white;
+  border-radius: 5px;
+  border-color: #000000;
+
+}
+
+#delogare{
+  color: red;
+}
+
+
+
+#bd{
+
+  left:100px; 
+ 
+}
+
+
+
+
+
+
+/* BUTOANE */ 
+
+
+
+.btn {
+  border: 2px solid black;
+   border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  
+}
+
+#btn-menu{
+ 
+  border-color: #000000;
+  color: black;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 5px;
+
+}
+
+
+
+#btn-login{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    position: fixed;
+    /*height: 50px;*/
+    background-color: black;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+
+#p-footer{
+  color: white;
+  text-align: right; 
+  margin-right:50px; 
+
+
+}

@@ -1,0 +1,18 @@
+
+<div class="container">
+<h1 style="text-align: center">Quiz</h1>
+
+
+
+<form action="/quizResult" method="post">
+    <%for( let i = 0; i < Qlist.length; i++) { %>
+        <p><%- Qlist[i].question %></p>
+        <% for (let j = 0; j <Qlist[i].answer.length; j++) { %>
+            <input type="radio" name="q<%- i %>" value="<%- j %>"/><%- Qlist[i].answer[j] %><br/> 
+        <% } %>
+    <% } %>
+    <br>
+    <input class="btn" type="submit" value=" See results"/>
+</form>
+
+</div>

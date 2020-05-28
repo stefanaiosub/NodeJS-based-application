@@ -1,0 +1,23 @@
+
+<div >
+<% if  (typeof loggedName != 'undefined')  { %>
+<h1 >Welcome to Stef's playlists library, <%= loggedName %> !</h1>
+<% } else { %>
+ <h1> Welcome to Stef's playlists library!</h1>
+<% } %>  
+</div>
+
+ 
+<div class="center" id="bd">
+	<form action="#" method='get'>
+		<button class="btn" type="submit"> Creare BD </button>
+	</form>
+	<br>
+	<form action="#" method='get'>
+		<button class="btn" type="submit"> Incarcare BD</button>
+	</form>
+	<br>
+	<form action="#" method='get'>
+		<button class="btn"> Afisare BD</button>
+	</form>
+</div>

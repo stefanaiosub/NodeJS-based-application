@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+		<title>Stef's playlist</title>
+		 <link rel="shortcut icon" href="images/layout/icon2.png"/>
+		 <link rel="stylesheet" href="css/css.css" type="text/css" media="screen,projection" />
+	</head>
+
+
+	<body class="container"  onclick="showPortals(this)">
+			
+    <div class="bg-image img1">
+		
+
+		<div id="header">
+			<button class="btn" id="btn-menu" onclick="openNav()">MENU</button>
+
+			<div id='logged'>
+
+			<% if  (typeof loggedName != 'undefined')  { %>
+			<h3 id="logged">You are logged as <%= loggedName %> </h3>	
+			<% } %>  
+
+			</div>
+			
+
+		</div>
+
+		
+
+		<div id="sidenav1" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/quiz">Quiz</a></li>
+					<% if  (typeof loggedName != 'undefined')  { %>
+					
+						<li><a href="/logout">Logout</a></li>
+						<% } else { %> 
+						<li><a href="/login">Login</a></li>
+					<% } %>  
+
+					
+					
+			</ul>
+		</div>
+
+
+		
+	
+
+		
+
+		<div class="menu" >
+
+
+  				 <%- body -%>		
+		</div>
+			
+	</div>
+
+
+		
+	
+		<div id="footer">
+			<p id="p-footer"><small>&copy; 2020 Stefana Iosub's playlist</p>
+				
+		</div>
+
+
+	</body>
+
+
+</html>
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("sidenav1").style.width = "250px";
+  //document.getElementById("menu").style.marginLeft = "250px";
+  
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("sidenav1").style.width = "0";
+  //document.getElementById("menu").style.marginLeft = "0";
+ 
+}
+ function showPortals() {
+var offsetHeight = document.getElementsByClassName("container").offsetHeight;
+document.getElementById("bg-image").style.height = offsetHeight + 'px;';
+}
+</script>
